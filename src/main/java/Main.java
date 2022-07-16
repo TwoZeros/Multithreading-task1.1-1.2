@@ -4,11 +4,10 @@ import java.util.concurrent.*;
 
 public class Main {
 
-    private static final int DURATION_SLEEP = 15000;
     private static final int THREAD_SLEEP = 2000;
     private static final int COUNT_THREAD = 4;
 
-    public static void main(String[] args) throws InterruptedException, ExecutionException {
+    public static void main(String[] args) throws InterruptedException {
 
         Callable<Integer> helloCallable = () -> {
             final int maxIteration = 5;
